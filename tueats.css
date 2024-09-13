@@ -3,7 +3,7 @@ h1 {
 }
 
 table, th, td {
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid black;
     border-collapse: collapse;
 }
 
@@ -14,6 +14,7 @@ th, td {
 
 th {
     background-color: #fb0;
+    font-weight: bolder;
 }
 
 td {
@@ -22,9 +23,35 @@ td {
 
 label {
     display: block;
-    margin: 0.5rem 0;
+    margin-bottom: 14px;
 }
 
 fieldset {
     margin-bottom: 10px;
+}
+
+table {
+    width: 75%;
+    margin: auto;
+} 
+
+caption {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    color: #fb0;
+}
+
+
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container img {
+    width: 200px;
+    /* source of image used https://upload.wikimedia.org/wikipedia/commons/6/69/Towson_University_logo_horiz_2019.png */
 }
