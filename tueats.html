@@ -11,6 +11,7 @@
     </head>
 
     <body>
+        <h1 >Welcome to TU Eats</h1>
         <form method="get" action="">
             <fieldset>
                 <legend>Sign Up</legend>
@@ -19,10 +20,38 @@
                 <label for ="referral-code" id="code">Referral code <input id="referral-code" name="referral-code" type="text" placeholder="TU20OFF"></input></label>
                 <label for ="password" id="password-label">Password <input id="password" name="password" type="password" required></input></label>
                 <label for ="password-verify" id="verify-label">Password <input id="password-verify" name="password-verify" type="password" required></input></label>
-                <label for="news-letter" id="news-letter-label"><input id="newsletter" type="checkbox"> Sign Up for our news letter</label>
-                
+                <label for="news-letter" id="news-letter-label"><input id="newsletter" type="checkbox"> Sign up for our news letter</label>
             </fieldset>
 
+            <fieldset>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Calories</th>
+                    </tr>
+                    <tr>
+                        <td>item 1</td>
+                        <td>Burger</td>
+                        <td>$8</td>
+                        <td>550</td>
+                    </tr> <tr>
+                    </tr>
+                        <td>item 2</td>
+                        <td>Mozzarella Sticks</td>
+                        <td>$7</td>
+                        <td rowspan="2">400</td>
+                    </tr>
+                    <tr>
+                        <td>item 3</td>
+                        <td>Fries</td>
+                        <td>$4</td>
+                    </tr>
+                </table>
+                <caption>Menu is subject to change, please visit our main site for more information <a href="Towson.edu">Towson Website</a></caption>
+            </fieldset>
+            <button type="submit">Submit</button>
         </form>
     </body>
 

@@ -1,0 +1,30 @@
+h1 {
+    color: #fb0;
+}
+
+table, th, td {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #fb0;
+}
+
+td {
+    background-color: #808080;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+fieldset {
+    margin-bottom: 10px;
+}
