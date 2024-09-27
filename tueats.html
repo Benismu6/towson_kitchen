@@ -15,14 +15,14 @@
             <h1>Welcome to TU Eats</h1>
             <img src="Towson_University_logo_horiz_2019.png" alt="Towson University logo">
         </div>
-        <form method="GET" action="tueats_completed.html">
+        <form id="tuEatsForm" method="GET" action="tueats_completed.html">
             <fieldset>
                 <legend>Sign Up</legend>
                 <label id="username-label">Username: <input id="username" name="email" type="text" placeholder="Jsmith123" required></label>
                 <label id="email-label">Email: <input id="email" name="email" type="email" placeholder="Jsmith@students.towson.edu" required></label>
-                <label id="code">Referral code: <input id="referral-code" name="referral-code" type="text" placeholder="TU20OFF"></label>
+                <label id="code-label">Referral code: <input id="referral-code" name="referral-code" type="text" placeholder="TU20OFF"></label>
                 <label id="password-label">Password: <input id="password" name="password" type="password" required></label>
-                <label id="verify-label">Verify password: <input id="password-verify" name="password-verify" type="password" required></label>
+                <label id="verify-password-label">Verify password: <input id="verify-password" name="password-verify" type="password" required></label>
                 <label id="news-letter-label"><input id="newsletter" name="news-letter" type="checkbox"> Sign up for our newsletter?</label>
                 <button type="submit">Submit</button>
             </fieldset>
@@ -57,6 +57,8 @@
                 </table>
             </fieldset>
         </form>
+
+        <script src="script.js"></script>
     </body>
 
 
