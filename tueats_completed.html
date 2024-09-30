@@ -8,7 +8,52 @@
     </head>
 
     <body>
-        <h1>Welcome to TUEats!</h1>
         <p>Your registration is complete</p>
+        <h1>Hello:</h1>
+        <p id="username"> - Username: </p>
+        <p id="email"> - Email: </p>
+        <p id="referral-code"></p>
+        <p id="password"> - Password: </p>
+        <p id="password-verify"> - Password verify: </p>
+        <p id="newsletter"> - Checkbox: </p>
+
+        <script>
+            
+            // Read URL parameters 
+            const parameters = new URLSearchParams(location.search);
+            
+            // Get parameter values from query string
+            const username = parameters.get("username"),
+                email = parameters.get("email"),
+                referralCode = parameters.get("referral-code"),
+                password =  parameters.get("password"),
+                passwordVerify = parameters.get("password-verify"),
+                newsLetter = parameters.get("news-letter");
+
+            // Append values to appropriate text
+            document.getElementById("username").textContent += `${username}`;
+            document.getElementById("email").textContent += `${email}`;
+
+            // Display passwords
+            document.getElementById("password").textContent += `${password}`;
+            document.getElementById("password-verify").textContent += `${passwordVerify}`;
+
+            
+            // If valid referral code entered, print referral
+            if (referralCode) {
+                document.getElementById("referral-code").textContent = ` - Referral Code: ${referralCode} (free meal)`;
+            } else {
+                // otherwise print nothing
+                document.getElementById("referral-code").textContent = '';
+            }
+            // If checkbox is clicked print true
+            if (newsLetter === "on") {
+                document.getElementById("newsletter").textContent += "True";
+            } else {
+                //otherwise print false
+                document.getElementById("newsletter").textContent += "False";
+            }
+
+        </script>
     </body>
 </html>

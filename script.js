@@ -1,4 +1,6 @@
+// verify script is connected 
 console.log("Javaconnected");
+
 //  Check and ensure password and verify password match
         // get form element
         const form = document.getElementById("tuEatsForm");
@@ -69,5 +71,10 @@ console.log("Javaconnected");
         } else {
             // If code valid enable submit button   
             submit.disabled = false;
+        }
+
+        // Delete invalid message when another character is added and deleted and referral code is no longer invalid
+        if (!invalidCodes.includes(code)){
+            invalidCodeMessage.textContent = '';
         }
     }
