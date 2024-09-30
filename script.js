@@ -15,6 +15,19 @@ console.log("Javaconnected");
                 event.preventDefault();
                 alert("Please ensure passwords match");
             }
+
+            const username = document.getElementById("username").value; //Get value of username entered 
+            // Ensure username is 6 to 24 characters long
+            let length = username.length; // Store username size in length
+            if (length < 6) {
+                event.preventDefault();
+                alert("Username must be at least 6 characters long")
+            } else if (length > 24) {
+                event.preventDefault();
+                alert("Username must be less than 24 characters long")
+            }
+
+
         });
 
 // Check referral code in real time and respond accordingly
@@ -50,7 +63,7 @@ console.log("Javaconnected");
 
         // If code is invalid, display message and disable button
         if (invalidCodes.includes(code)) {
-            invalidCodeMessage.textContent = 'Code is invalid please try again';
+            invalidCodeMessage.textContent = 'This referral code is invalid';
             invalidCodeMessage.style.color = 'red';
             submit.disabled = true; // Disable submit button
         } else {

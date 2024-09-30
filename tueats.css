@@ -55,3 +55,7 @@ div {
     width: 200px;
     /* source of image used https://upload.wikimedia.org/wikipedia/commons/6/69/Towson_University_logo_horiz_2019.png */
 }
+
+p {
+    font-weight: bold;
+}
