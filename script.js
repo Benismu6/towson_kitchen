@@ -29,7 +29,6 @@ console.log("Javaconnected");
                 alert("Username must be less than 24 characters long")
             }
 
-
         });
 
 // Check referral code in real time and respond accordingly
